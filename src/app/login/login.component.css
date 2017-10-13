@@ -1,0 +1,12 @@
+#con{
+    padding-top: 10%;
+}
+#error{
+    color: red;
+    animation: alternate-reverse;
+    padding-left: 10%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}

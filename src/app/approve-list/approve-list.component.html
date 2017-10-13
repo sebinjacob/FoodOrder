@@ -1,0 +1,13 @@
+
+
+<div class="form-group">
+    <label for="sel1">Select Approval Type:</label>
+    <select class="form-control" id="sel1" (change)="approveAction(type.value)" #type ngModel name="appoval">
+      <option>Approve</option>
+      <option>Reject</option>
+      
+    </select>
+</div>
+<div *ngFor="let hero of action_list">
+<span class="badge">Type is  {{hero.action}}  !</span> 
+</div>

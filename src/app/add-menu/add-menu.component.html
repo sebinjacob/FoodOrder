@@ -1,0 +1,28 @@
+<h1>
+  Add Menu
+</h1>
+<div class="container" >
+  <form ngForm #fData="ngForm" (ngSubmit)="addMenu(fData)">
+  <br/><br/>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="first">Name :</label><br/>
+          <input type="text" ngModel name="menu_name" class="form-control" placeholder="Add Menu" id="first">
+        </div>
+      </div>
+
+    </div>
+    <!--  row   -->
+
+   <input type="submit" name="" value="Submit" class="btn btn-primary" id="btn">
+    <button type="submit" class="btn btn-primary">Edit</button>
+    <button type="submit" class="btn btn-primary">Delete</button>
+
+
+  </form>
+</div>
+
+<div *ngFor="let hero of data" id="t">
+    <span class="badge">{{hero.menu_name}} successfully Added .. !</span> 
+</div>

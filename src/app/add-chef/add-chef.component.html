@@ -1,0 +1,80 @@
+<div class="container login" id="top">
+  <form #formData="ngForm" (ngSubmit)="addChef(formData)">
+    <h2>Add New Chef</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="first">Chef Name</label>
+          <input type="text" class="form-control" placeholder="" id="first" ngModel name="chef_name">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="last">Address</label>
+          <input type="text" class="form-control" placeholder="" id="last" ngModel name="chef_address">
+        </div>  
+      </div>
+      <!--  col-md-6   -->
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="company">Mobile Number</label>
+          <input type="text" class="form-control" placeholder="" id="phone" placeholder="phone" ngModel name="chef_mob">
+        </div>
+
+
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+
+        <div class="form-group">
+          <label for="phone">DOB</label>
+          <input type="tel" class="form-control"  ngModel name="chef_dob">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+    </div>
+    <!--  row   -->
+
+
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="form-group">
+          <label for="email">Email ID </label>
+          <input type="email" class="form-control" id="email" placeholder="email" ngModel name="chef_email">
+        </div>
+      </div>
+      <!--  col-md-6   -->
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="url">Description </label>
+          <input type="url" class="form-control" id="url" ngModel name="chef_description">
+        </div>
+
+      </div>
+      <!--  col-md-6   -->
+    </div>
+    <!--  row   -->
+
+
+   
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+<ul>
+<div *ngFor="let hero of user">
+    <span class="badge">{{hero.chef_name}} successfully Added .. !</span> 
+</div>
+</ul>
