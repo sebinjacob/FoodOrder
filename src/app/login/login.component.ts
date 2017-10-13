@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   login(logData)
   {
     console.log(logData.value);
-    localStorage.setItem("log",logData.value);
+    localStorage.setItem("log",JSON.stringify(logData.value));
     var c_log=logData.value
      
      var db_log=JSON.parse(localStorage.getItem("log"));
